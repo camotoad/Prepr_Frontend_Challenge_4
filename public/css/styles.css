@@ -40,3 +40,110 @@
     padding-right: 10px;
     padding-left: 10px;
 }
+
+section{
+    padding-top: 70px;
+}
+
+.jumbotron{
+    background-color: #80c465;
+    color: white;
+    text-align: center;
+    min-height: 250px;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.jumbo-h1{
+    line-height: 250px;
+}
+
+.float-right{
+    float: right;
+}
+
+.main-body{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.dropdown-divider{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 10px;
+}
+
+.explorer{
+    
+}
+
+.row-explorer{
+    height: fit-content;
+    min-height: 330px;
+    padding-top: 30px;
+}
+
+.space-eater{
+    height: 60px;
+}
+
+.card-details{
+    
+}
+
+footer{
+    margin-top: 60px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;   
+    color: grey;
+}
+
+.link-dark{
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.footer-div{
+    padding-top: 10px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+a.tags{
+    color: #13b15c;
+    text-decoration: none;
+}
+
+a.title-link{
+    text-decoration: none;
+    color: black;
+}
+a.title-link:hover{
+    color: #13b15c;
+}
+
+.challenge-mid{
+    padding: 40px 15px; 
+    height:33%; 
+    background-color: #e1f8e4; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: larger;
+}
+
+.challenge-top{
+    padding: 40px 15px; 
+    height:33%; 
+    text-align: left; 
+    font-weight: bold; 
+    font-size: larger;
+    color: #80c465;
+}
+
+.card-pic{
+    margin-bottom: 30px;
+}
