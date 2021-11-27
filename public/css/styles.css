@@ -1,3 +1,42 @@
-body{
-    background-color: black;
+.input-group-text {
+    height: 100%;
+    background-color: white;
+}
+
+.fa-search {
+    color:gray;
+}
+
+.search-form{
+    min-width: 430px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.right-nav{
+    align-items: center;
+}
+
+.user-profile{
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.profile-image{
+    max-width: 40px;
+    max-height: 50%;
+    margin-top: auto;
+    padding-right: 10px;
+}
+
+.i-nav{
+    text-transform: capitalize;
+    font-size: small;
+    color: grey;
+    font-variant: normal;
+    padding-right: 10px;
+    padding-left: 10px;
 }
