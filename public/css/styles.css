@@ -25,8 +25,23 @@
     text-align: center;
 }
 
+.user-profile2{
+    height: 120px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .profile-image{
     max-width: 40px;
+    max-height: 50%;
+    margin-top: auto;
+    padding-right: 10px;
+}
+
+.profile-image2{
+    max-width: 100px;
     max-height: 50%;
     margin-top: auto;
     padding-right: 10px;
@@ -46,7 +61,7 @@ section{
 }
 
 .jumbotron{
-    background-color: #80c465;
+    background-color: #80c465 !important; 
     color: white;
     text-align: center;
     min-height: 250px;
@@ -55,6 +70,7 @@ section{
 }
 
 .jumbo-h1{
+    background-color: #80c465 !important;
     line-height: 250px;
 }
 
@@ -74,10 +90,6 @@ section{
     max-height: 10px;
 }
 
-.explorer{
-    
-}
-
 .row-explorer{
     height: fit-content;
     min-height: 330px;
@@ -85,7 +97,7 @@ section{
 }
 
 .space-eater{
-    height: 60px;
+    height: 150px;
 }
 
 .card-details{
@@ -144,6 +156,163 @@ a.title-link:hover{
     color: #80c465;
 }
 
+.lab-mid{
+    padding: 40px 15px; 
+    height:33%; 
+    background-color: #cfeafa; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: larger;
+}
+
+.lab-top{
+    padding: 40px 15px; 
+    height:33%; 
+    text-align: left; 
+    font-weight: bold; 
+    font-size: larger;
+    color: #398add;
+}
+
+.project-mid{
+    padding: 40px 15px; 
+    height:33%; 
+    background-color: #ffe3d3; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: larger;
+}
+
+.project-top{
+    padding: 40px 15px; 
+    height:33%; 
+    text-align: left; 
+    font-weight: bold; 
+    font-size: larger;
+    color: #fa9358;
+}
+
 .card-pic{
     margin-bottom: 30px;
+}
+
+.recommended{
+    margin-left: 10px;
+}
+
+.dash-drop{
+    position: relative;
+    display: inline-block;
+    height: max-content;
+}
+.dash-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 170px;
+    min-height: 35px;
+    z-index: 1;
+    border: black;
+}
+
+.dash-drop:hover .dash-content {
+    display: block;
+}
+
+.man-drop{
+    position: relative;
+    display: inline-block;
+    height: max-content;
+}
+.man-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    max-width: 100px;
+    min-height: 35px;
+    z-index: 1;
+    border: black;
+}
+
+.man-drop:hover .man-content {
+    display: block;
+}
+
+div.active, .active a:link, .active a:visited{
+    background-color: whitesmoke;
+    color: #13b15c;
+}
+
+div.inactive:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px 5px #888888;
+    z-index: 3;
+}
+
+body.dark, .dark * {
+    background-color: #333;
+    color: white;
+    border-color: white;
+}
+
+.mode{
+    height: 24px;
+    white-space:nowrap;
+}
+
+.nav-item:hover{
+    background-color: whitesmoke;
+}
+
+.side-bar{
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.5s;
+    top: 55px;
+    left: 0;
+    border-right: black;
+    width: 0;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.side-bar-open{
+    width: 250px;
+}
+
+.side-ul{
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    margin-left: -30px;
+}
+
+.profile-nav{
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.5s;
+    top: 55px;
+    right: 0;
+    border-right: black;
+    height: 0px;
+    width: 250px;
+}
+
+.side-ul2{
+    list-style-type: none;
+    text-align: left;
+    justify-content: left;
+    margin-left: -30px;
+}
+
+.profile-nav-open{
+    height: fit-content;
+}
+
+.bg-ws{
+    background-color: whitesmoke;
 }

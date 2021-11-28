@@ -20,24 +20,80 @@
                     <img src="images/logo.png" width="60" height="25">
                 </a>
             </li>
-            <li class='nav-item bar-menu my-auto'>
+            <li class='nav-item bar-menu my-auto' id='side-bar'>
                 <a href='#' class="link-dark">
                     <span><i class='fas fa-bars'></i></span>
                 </a>
             </li>
+
+            <div class='side-bar bg-white' id='side'>
+                <div style='padding-top: 30px; margin-left: 10px;'>
+                    <span class='user-profile2'>
+                        <img src='images/default-user.png' class='profile-image2'>
+                    </span>         
+                </div>
+                <h5><a href='#' class='link-dark'>User</a></h5>
+                <ul class='side-ul'>
+                    <div class='dropdown-divider'></div>
+                    <h5 class='bg-ws' id='categories'>Browse</h5>
+                    <div class='dropdown-divider'></div>
+                    <li class='nav-item'>
+                        <a href='#'><i class='fas fa-binoculars i-nav'>&nbsp;Explore</i></a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href='#'><i class='fas fa-flask i-nav'>&nbsp;Labs</i></a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href='#'><i class='fas fa-puzzle-piece i-nav'>&nbsp;Challenges</i></a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href='#'><i class='fas fa-briefcase i-nav'>&nbsp;Organizations</i></a>
+                    </li>
+                    <div class='dropdown-divider'></div>
+                    <h5 class='bg-ws' id='categories2'>My Activity</h5>
+                    <div class='dropdown-divider'></div>
+                    <li class='nav-item'>
+                        <a href='#'><i class='far fa-clipboard i-nav'>&nbsp;Projects</i></a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href='#'><i class='fas fa-user-friends i-nav'>&nbsp;Team Matching</i></a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href='#'><i class='fas fa-trophy i-nav'>&nbsp;Achievements</i></a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href='#'><i class='fas fa-book i-nav'>&nbsp;Resources</i></a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href='#' class='link-dark'>&nbsp;Help Center</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href='#' class='link-dark'>&nbsp;vSome Version</a>
+                    </li>
+                </ul>
+            </div>
         </ul>
         </div>
         <!-- right side -->
         <div class='collapse navbar-collapse navbar-nav'>
             <ul class='navbar-nav mr-auto mt-2 mt-lg-0 right-nav'>
-                <li class='nav-item'>
-                    <i class='fas fa-binoculars i-nav'>&nbsp;Explore</i>
+                <li class='nav-item mode' id='mode'>
+                    <a href='#'><i class='fas fa-adjust i-nav'>&nbsp;Night Mode</i></a>
                 </li>
                 <li class='nav-item'>
-                    <i class='far fa-address-card i-nav'>&nbsp;Dashboard</i>
+                    <a href='#'><i class='fas fa-binoculars i-nav'>&nbsp;Explore</i></a>
                 </li>
-                <li class='nav-item'>
+                <li class='nav-item dash-drop'>
+                        <i class='far fa-address-card i-nav'>&nbsp;Dashboard</i>
+                     <div class='dash-content border'>
+                         <a href='#'><i class='fas fa-user i-nav'>&nbsp;&nbsp;User Dashboard</i></a>
+                     </div>
+                </li>
+                <li class='nav-item man-drop'>
                     <i class='fas fa-cog i-nav'>&nbsp;Manage</i>
+                    <div class='man-content border'>
+                        <a href='#'><i class='fas fa-user i-nav'>&nbsp;&nbsp;Profile</i></a>
+                    </div>
                 </li>
                 <!-- search bar -->
                 <form class="form-inline search-form">
@@ -48,7 +104,7 @@
                       <input type="text" class="form-control" placeholder="Search Challenges, Labs, Projects and People">
                     </div>
                 </form>
-                <li class='nav-item'>
+                <li class='nav-item' id='profile-nav'>
                     <a href='#'>
                         <span class='user-profile'>
                             <img src='images/default-user.png' class='profile-image'>
@@ -56,8 +112,49 @@
                     </a>
                 </li>
             </ul>
+            
         </div>
     </header>
+    <div class='profile-nav' id='right-nav'>
+        <div class='row side-ul2' style='padding-top: 20px; height: 75px'>
+            <div class='col-sm-6 float-right' style='padding-left: 30%;'>
+                <img src='images/default-user.png' class='profile-image2'>
+            </div>
+            <div class='col-sm-6'>
+                <h4><a class='link-dark' href='#'>User</a></h4>
+            </div>
+        </div>
+        <ul class='side-ul2'>
+            <li class='nav-item'>
+                <div class='dropdown-divider'></div>
+                    <a href='#'><i class='fas fa-user i-nav'>&nbsp;My Info</i></a>         
+            </li>
+            <li class='nav-item'>
+                <div class='dropdown-divider'></div>
+                <a href='#'><i class='fas fa-question-circle i-nav'>&nbsp;Help</i></a>
+            </li>
+            <li class='nav-item'>
+                <div class='dropdown-divider'></div>
+                <a href='#'><i class='fas fa-envelope i-nav'>&nbsp;Inbox</i></a>
+            </li>
+            <li class='nav-item'>
+                <div class='dropdown-divider'></div>
+                <a href='#'><i class='fas fa-newspaper i-nav'>&nbsp;Newsfeed</i></a>
+            </li>
+            <li class='nav-item'>
+                <div class='dropdown-divider'></div>
+                <a href='#'><i class='fas fa-bell i-nav'>&nbsp;Notifications</i></a>
+            </li>
+            <li class='nav-item'>
+                <div class='dropdown-divider'></div>
+                <a href='#'><i class='fas fa-cog i-nav'>&nbsp;Settings</i></a>
+            </li>
+            <li class='nav-item'>
+                <div class='dropdown-divider'></div>
+                <a href='#'><i class='fas fa-sign-out-alt i-nav'>&nbsp;Log Out</i></a>
+            </li>
+        </ul>
+    </div>
 
     <!-- Main -->
     <section class='main' role='main'>
@@ -67,10 +164,11 @@
                     <div class='jumbotron container'>
                         <h1 class='jumbo-h1'>Welcome back, User</h1>
                     </div>
+                    <br>
                 </div>
-                <div class='row'>
+                <div class='row' style="margin-left: 0px;">
                     <div class='col-md-12'>
-                        <div class='row'>
+                        <div class='row recommended'>
                             <div class='col-lg-4'>
                                 <div class='card border-0'>
                                     <div class='card-div'>
@@ -110,10 +208,16 @@
                             </div>
                             <div class='col-lg-6'>
                                 <div class='float-right border'>
-                                    <div class='btn-group'>
-                                        <a href='#' class='btn border'>Challenges</a>
-                                        <a href='#'class='btn border'>Labs</a>
-                                        <a href='#'class='btn border'>Projects</a>
+                                    <div class='btn-group btn-group-toggle'>
+                                        <div id='challenge-button' class=''>
+                                            <a href='#' class='btn border'>Challenges</a>
+                                        </div>
+                                        <div id='lab-button' class=''>
+                                            <a href='#'class='btn border'>Labs</a>
+                                        </div>
+                                        <div id='project-button'>
+                                            <a href='#'class='btn border'>Projects</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -121,9 +225,11 @@
                     </div>
                 </div>
                 <div class='dropdown-divider'></div>
-                <!-- cards begin here -->
-                <div class='explorer'>
 
+                <!-- cards begin here -->
+
+                <!-- Challenges -->
+                <div id='challenges'>
                     <div class='row row-explorer'>
                         <div class='col-sm-5'>
                             <div class='card-pic border' style='margin-left: 30px;'>
@@ -170,6 +276,106 @@
                         <div class='dropdown-divider'></div>
                     </div>
                 </div>
+
+                <!-- Labs -->
+                <div id='labs'>
+                    <div class='row row-explorer'>
+                        <div class='col-sm-5'>
+                            <div class='card-pic border' style='margin-left: 30px;'>
+                                <div onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class='lab-top'>Lab</div>
+                                    <div class='lab-mid'>Sample Lab 1</div>
+                                    <div class='lab-top'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-sm-7'>
+                            <div class='card-details col-md-11'>
+                                <h4><a href='#' class='title-link'>Sample Lab 1</a></h4>
+                                <h5>Lab</h5>
+                                <br>
+                                <p>Description of lab here.</p>
+                                <div class='space-eater'></div>
+                                <div class='float-right'><a href='#'class='tags'>View</a></div>
+                            </div>
+                        </div>
+                        <div class='dropdown-divider'></div>
+                    </div>
+
+                    <div class='row row-explorer'>
+                        <div class='col-sm-5'>
+                            <div class='card-pic border' style='margin-left: 30px;'>
+                                <div onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class='lab-top'>Lab</div>
+                                    <div class='lab-mid'>Sample Challenge 2</div>
+                                    <div class='challenge-top'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-sm-7'>
+                            <div class='card-details col-md-11'>
+                                <h4><a href='#' class='title-link'>Sample Lab 2</a></h4>
+                                <h5>Lab</h5>
+                                <br>
+                                <p>Description of lab here.</p>
+                                <div class='space-eater'></div>
+                                <div class='float-right'><a href='#'class='tags'>View</a></div>
+                            </div>
+                        </div>
+                        <div class='dropdown-divider'></div>
+                    </div>
+                </div>
+
+
+                <!-- Projects -->
+                <div id='projects'>
+                    <div class='row row-explorer'>
+                        <div class='col-sm-5'>
+                            <div class='card-pic border' style='margin-left: 30px;'>
+                                <div onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class='project-top'>Project</div>
+                                    <div class='project-mid'>Sample Project 1</div>
+                                    <div class='project-top'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-sm-7'>
+                            <div class='card-details col-md-11'>
+                                <h4><a href='#' class='title-link'>Sample Project 1</a></h4>
+                                <h5>Project</h5>
+                                <br>
+                                <p>Description of Project here.</p>
+                                <div class='space-eater'></div>
+                                <div class='float-right'><a href='#'class='tags'>View</a></div>
+                            </div>
+                        </div>
+                        <div class='dropdown-divider'></div>
+                    </div>
+
+                    <div class='row row-explorer'>
+                        <div class='col-sm-5'>
+                            <div class='card-pic border' style='margin-left: 30px;'>
+                                <div onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class='project-top'>Project</div>
+                                    <div class='project-mid'>Sample project 2</div>
+                                    <div class='challenge-top'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-sm-7'>
+                            <div class='card-details col-md-11'>
+                                <h4><a href='#' class='title-link'>Sample Project 2</a></h4>
+                                <h5>Project</h5>
+                                <br>
+                                <p>Description of project here.</p>
+                                <div class='space-eater'></div>
+                                <div class='float-right'><a href='#'class='tags'>View</a></div>
+                            </div>
+                        </div>
+                        <div class='dropdown-divider'></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -195,5 +401,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
