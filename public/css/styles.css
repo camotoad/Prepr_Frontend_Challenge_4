@@ -316,3 +316,26 @@ body.dark, .dark * {
 .bg-ws{
     background-color: whitesmoke;
 }
+
+.acsb-menu{
+    z-index: 2;
+    background-color: #13b15c;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} .acsb-menu:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+}
+
+.acsb-img{
+    width: 70%;
+    height: 70%;
+    padding-top: 10px;
+}
