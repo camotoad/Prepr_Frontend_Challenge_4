@@ -317,7 +317,7 @@ body.dark, .dark * {
     background-color: whitesmoke;
 }
 
-.acsb-menu{
+.acsb-toggle{
     z-index: 2;
     background-color: #13b15c;
     position: fixed;
@@ -329,7 +329,7 @@ body.dark, .dark * {
     justify-content: center;
     align-items: center;
     text-align: center;
-} .acsb-menu:hover{
+} .acsb-toggle:hover{
     cursor: pointer;
     transform:scale(1.1);
 }
@@ -338,4 +338,172 @@ body.dark, .dark * {
     width: 70%;
     height: 70%;
     padding-top: 10px;
+}
+.acsb-menu{
+    /* display: none; */
+    z-index: 5;
+    position: fixed;
+    top: 60px;
+    left: 30px;
+    width: 550px;
+    max-width: 550px;
+    height: 930px;
+    overflow-y: scroll;
+}
+
+.acsb-bar{
+    background-color: #0e8422;
+    position: fixed;
+    height: 40px;
+    width: inherit;
+}
+
+.acsb-icons{
+    color:white;
+    font-size: larger;
+    vertical-align: middle;
+    margin-right: 5px;
+} .acsb-icons:hover{
+    transform: scale(1.1) !important;
+}
+
+.acsb-lang{
+    margin-right: 10px;
+}
+
+.acsb-round-btn{
+    background-color: white;
+    color: #0e8422;
+    border-radius: 50px;
+    padding: 10px 10px;
+    font-size: small;
+    text-decoration: none;
+} 
+.acsb-round-btn:hover{
+    color: #0e8422;
+    transform: scale(1.1) !important;
+}
+
+.hover{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hover:hover{
+    transform: scale(1.1) !important;
+}
+
+.acsb-toggle-off{
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 3px 3px #888888;
+    font-weight: bold;
+    margin-left: -28px;
+}
+
+.acsb-toggle-on{
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 28px;
+    padding-left: 25px;
+    background-color: #f2f7fa;
+    font-weight: bold;
+    margin-left: 10px;
+    text-align: right;
+    margin-right: 20px;
+    color: black !important;
+}
+
+.profiles{
+    margin-top: -15px;
+}
+
+.profile-icons{
+    width: 30px;
+    height: 30px;
+    font-size: x-large;
+    color: black;
+} 
+.profile-hover{
+    padding-bottom: 20px; 
+    margin-top: 35px
+}
+.profile-hover:hover, .profile-hover:hover a , .profile-hover:hover i{
+    color: #0e8422 !important;
+    cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+.acsb-main{
+    background-color: #f2f7fa;
+    text-align: center;
+    height: 120px;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+a.acsb-main-icons{
+    background-color: #109326;
+    width: 30px;
+    height: 30px;
+}
+i.acsb-main-icons{
+    color:white;
+    width: 30px;
+    height: 30px;
+} a.acsb-main-icons:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.default-span{
+    background-color: #dae8fe;
+    color: #109326;
+    width: 210px;
+    border-radius: 10px;
+}
+
+.acsb-main-btn {
+    background-color: #f2f7fa;
+    text-align: center;
+    height: 120px;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+} 
+.acsb-main-btn:hover{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #109326 !important;
+    cursor: pointer;
+}
+
+.color-picker{
+    width: 23px;
+    height: 23px;
+    margin-left: 5px;
 }
