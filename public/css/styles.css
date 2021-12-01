@@ -340,7 +340,7 @@ body.dark, .dark * {
     padding-top: 10px;
 }
 .acsb-menu{
-    /* display: none; */
+    display: none;
     z-index: 5;
     position: fixed;
     top: 60px;
@@ -351,11 +351,17 @@ body.dark, .dark * {
     overflow-y: scroll;
 }
 
+.acsb-menu.moved{
+    left: unset;
+    right: 30px;
+}
+
 .acsb-bar{
     background-color: #0e8422;
     position: fixed;
     height: 40px;
     width: inherit;
+    z-index: 5;
 }
 
 .acsb-icons{
@@ -365,10 +371,16 @@ body.dark, .dark * {
     margin-right: 5px;
 } .acsb-icons:hover{
     transform: scale(1.1) !important;
+    cursor: pointer;
 }
 
 .acsb-lang{
     margin-right: 10px;
+}
+
+.acsb-lang:hover{
+    background-color: #0b6419;
+    cursor: pointer;
 }
 
 .acsb-round-btn{
@@ -393,33 +405,63 @@ body.dark, .dark * {
 }
 
 .acsb-toggle-off{
+    display: inline-block;
+    position: absolute;
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
     background-color: white;
     box-shadow: 1px 1px 3px 3px #888888;
     font-weight: bold;
-    margin-left: -28px;
+    margin-left: 10px;
+    margin-top: -20px;
+    
+}
+
+.acsb-toggle-off.moved{
+    transform: translateX(55px);
+    background-color: #279238;
 }
 
 .acsb-toggle-on{
+    margin-top: -20px;
     border-radius: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 28px;
-    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+    padding-left: 35px;
     background-color: #f2f7fa;
     font-weight: bold;
     margin-left: 10px;
     text-align: right;
     margin-right: 20px;
     color: black !important;
+    position: absolute;
+}
+
+.toggle-text, .toggle-text:hover{
+    color: black !important;
+    position: absolute; 
+    font-weight: bold; 
+    z-index: 3;
+    text-decoration: none;
+}
+.toggle-text.on, .toggle-text.on:hover {
+    color: black !important;
+    margin-top: -13px; 
+    margin-left: 83px;
+}
+
+.toggle-text.off{
+    color: black !important;
+    margin-top: -13px; 
+    margin-left: 23px;
 }
 
 .profiles{
-    margin-top: -15px;
+    margin-top: -25px;
 }
 
 .profile-icons{
@@ -430,9 +472,9 @@ body.dark, .dark * {
 } 
 .profile-hover{
     padding-bottom: 20px; 
-    margin-top: 35px
+    margin-top: 35px;
 }
-.profile-hover:hover, .profile-hover:hover a , .profile-hover:hover i{
+.profile-hover:hover, .profile-hover:hover a :not(.toggle-text), .profile-hover:hover i{
     color: #0e8422 !important;
     cursor: pointer;
 }
@@ -507,3 +549,55 @@ i.acsb-main-icons{
     height: 23px;
     margin-left: 5px;
 }
+
+.lang-select{
+    z-index: 10;
+    left: 5%;
+    top: 25%;
+    position: fixed;
+    width: 403px;
+    display: none;
+}
+
+.lang-select.moved{
+    left:unset;
+    right: 5%
+}
+
+.acsb-lang-btn{
+    background-color: #dae8fe;
+    border-radius: 50px;
+    padding: 10px 10px;
+    font-size: small;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    width: 100px;
+    white-space:nowrap;
+}
+.acsb-lang-btn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.overlay.active {
+    pointer-events: all;
+  }
+
+  #p1text, #p2text, #p3text, #p4text, #p5text, #p6text{
+      display: none;
+  }

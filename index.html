@@ -159,20 +159,98 @@
     <span id='acsb-toggle' class='acsb-toggle user-profile rounded-circle'>
         <img src='images/acc.svg' class="acsb-img" style='margin-left: auto;'>
     </span>
-    <div id='acsb-menu' class='acsb-menu bg-black rounded' style='margin-bottom: 30px;'>
+
+    <div class='overlay'></div>
+
+    <div id='lang-select' class='bg-white rounded lang-select '>
+        <div class='row'>
+            <div class='d-flex'>
+                <button id='lang-close' style='background-color: inherit; border: none; font-weight: bold;'>X</button>
+            </div>
+            <div class='col-md-12' style='text-align: center; justify-content: center;'>
+                <h5>Choose the Interface Language</h5>
+            </div>
+            <br>
+            <br>
+            <div class='d-flex' style='justify-content: center; text-align: center; margin-top: 0px;'>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='English'>English</a>
+                </div>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Spanish'>Spanish</a>
+                </div>
+            </div>
+            <div class='d-flex' style='justify-content: center; text-align: center; margin-top: 20px;'>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='German'>German</a>
+                </div>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Portugese'>Portugese</a>
+                </div>
+            </div>
+            <div class='d-flex' style='justify-content: center; text-align: center; margin-top: 20px;'>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='French'>French</a>
+                </div>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Italian'>Italian</a>
+                </div>
+            </div>
+            <div class='d-flex' style='justify-content: center; text-align: center; margin-top: 20px;'>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Hebrew'>Hebrew</a>
+                </div>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Chinese-SIMP'>Chinese (TW)</a>
+                </div>
+            </div>
+            <div class='d-flex' style='justify-content: center; text-align: center; margin-top: 20px;'>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Russian'>Russian</a>
+                </div>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Arabic'>Arabic</a>
+                </div>
+            </div>
+            <div class='d-flex' style='justify-content: center; text-align: center; margin-top: 20px;'>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Arabic'>Arabic 2</a>
+                </div>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Dutch'>Dutch</a>
+                </div>
+            </div>
+            <div class='d-flex' style='justify-content: center; text-align: center; margin-top: 20px; padding-bottom: 40px;'>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Chinese-TRAD'>Chinese (Trad)</a>
+                </div>
+                <div class='hover acsb-lang-btn'>
+                    <a class='link-dark' id='Japanese'>Japanese</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='acsb-menu' class='acsb-menu rounded ' style='margin-bottom: 30px; background-color: rgb(214, 232, 255);'>
         <div class='acsb-bar rounded-top'>
             <div class='row'>
                 <div class='col-md-4'>
                     <div class='d-flex 'style='margin-left: 10px;'>
-                        <a href='#' id='close-btn' class='acsb-icons' data-bs-placement='right' data-toggle='popover' data-content='Close the interface'><i class='fas fa-times-circle acsb-icons'></i></a>
-                        <a href='#' id='move-btn' class='acsb-icons rounded-circle' data-bs-placement='right' data-toggle='popover' data-content='Chance the accessiblity interface position'><i class='fas fa-arrows-alt-h acsb-icons'></i></a>
-                        <a href='#' id='q-btn' class='acsb-icons' data-bs-placement='right' data-toggle='popover' data-content='Accessbility statement'><i class='fas fa-question-circle acsb-icons'></i></a>
+                        <a id='close-btn' class='acsb-icons' data-bs-placement='right' data-toggle='popover' data-content='Close the interface'><i class='fas fa-times-circle acsb-icons'></i></a>
+                        <a id='move-btn' class='acsb-icons rounded-circle' data-bs-placement='right' data-toggle='popover' data-content='Chance the accessiblity interface position'><i class='fas fa-arrows-alt-h acsb-icons'></i></a>
+                        <a id='q-btn' class='acsb-icons' data-bs-placement='right' data-toggle='popover' data-content='Accessbility statement'><i class='fas fa-question-circle acsb-icons'></i></a>
                     </div>                    
                 </div>
                 <div class='col-md-8'>
                     <div class='float-right'>
-                        <div class='acsb-lang'>
-                            English
+                        <div class=''>
+                            <div style='justify-content: center; vertical-align: middle; text-align: center; padding-top: 8px'>
+                                <span class='acsb-lang'style='border-radius: 20px; padding-left: 10px; padding-right:10px; height: 30px; color: white'>
+                                    <img>
+                                    <a id='language'>English</a>
+                                    <i class='fas fa-chevron-down'></i>
+                                </span>
+                            </div>                          
                         </div>
                     </div>
                 </div>
@@ -201,42 +279,57 @@
                       <i class="fas fa-search"></i>
                     </span>
                   </div>
-                  <div class='bg-white content rounded-bottom' style='width: 90%; margin-left: auto; margin-right: auto; padding-top: 28px; margin-top: 2px; padding-bottom: 10px; text-align: left;'>
+                  <div id='profiles-toggler' class='bg-white content rounded-bottom' style='width: 90%; margin-left: auto; margin-right: auto; padding-top: 28px; margin-top: 2px; padding-bottom: 10px; text-align: left;'>
                       <div style='margin-bottom: -10px;'>
                           <h5 style='margin-left: 10px;'>Choose the right accessibility profile for you</h5>
                       </div>
                       <br>
-                      <div class='d-flex profile-hover'>
-                          <div style='padding-left: 10px;'>
-                            <span class='acsb-toggle-on'><span class='acsb-toggle-off'>OFF</span>&nbsp;&nbsp;ON</span>
+                      <div class='d-flex profile-hover' id='profile1'>
+                          <div style='padding-left: 10px;' >
+                                <span class='acsb-toggle-on'></span>
+                                <a class='toggle-text off' >OFF</a>
+                                <a class='toggle-text on'>ON</a>
+                                <span class='acsb-toggle-off' id='p1'></span>
                           </div>
-                          <div class='row profiles' >
+                          <div class='row profiles' style='margin-left: 130px; margin-right: -20px'>
                               <a>Seizure Safe Profile</a>
                               <a>Eliminates flashes and reduces color</a>
                           </div>
                           <div style='margin-top: -10px; margin-right: 10px;'>
                             <a class='rounded-circle profile-icons' style='background-color: #f2f7fa;'><i class='fas fa-water profile-icons'></i></a>
-                          </div>
+                          </div>                   
                       </div>
+                      <div class='' style='text-align: center; margin: 0px 30px;' id='p1text'>
+                            <a>This profile enables epileptic and seizure prone users to browse safely by eliminating the risk of seizures that result from flashing or blinking animations and risky color combinations. </a>
+                        </div>
                       <div class='dropdown-divider'></div>
-                      <div class='d-flex profile-hover'>
-                            <div style='padding-left: 10px;'>
-                            <span class='acsb-toggle-on'><span class='acsb-toggle-off'>OFF</span>&nbsp;&nbsp;ON</span>
-                            </div>
-                            <div class='row profiles' >
-                                <a>Vision Impaired Profile</a>
-                                <a>Enhances the website's visuals</a>
-                            </div>
+                      <div class='d-flex profile-hover' id='profile2'>
+                        <div style='padding-left: 10px;' >
+                              <span class='acsb-toggle-on'></span>
+                              <a class='toggle-text off'>OFF</a>
+                              <a class='toggle-text on'>ON</a>
+                              <span class='acsb-toggle-off' id='p2'></span>
+                        </div>
+                        <div class='row profiles' style='margin-left: 130px; margin-right: -20px'>
+                            <a>Vision Impaired Profile</a>
+                            <a>Enhances the website's visuals</a>
+                        </div>
                             <div style='margin-top: -10px; margin-right: 10px;'>
                             <a class='rounded-circle profile-icons' style='background-color: #f2f7fa;'><i class='fas fa-eye profile-icons'></i></a>
                             </div>
                         </div>
+                        <div class='' style='text-align: center; margin: 0px 30px;' id='p2text'>
+                            <a> This profile adjusts the website, so that it is accessible to the majority of visual impairments such as Degrading Eyesight, Tunnel Vision, Cataract, Glaucoma, and others. </a>
+                        </div>
                         <div class='dropdown-divider'></div>
-                        <div class='d-flex profile-hover'>
-                            <div style='padding-left: 10px;'>
-                            <span class='acsb-toggle-on'><span class='acsb-toggle-off'>OFF</span>&nbsp;&nbsp;ON</span>
+                        <div class='d-flex profile-hover' id='profile3'>
+                            <div style='padding-left: 10px;' >
+                                  <span class='acsb-toggle-on'></span>
+                                  <a class='toggle-text off'>OFF</a>
+                                  <a class='toggle-text on'>ON</a>
+                                  <span class='acsb-toggle-off' id='p3'></span>
                             </div>
-                            <div class='row profiles' >
+                            <div class='row profiles' style='margin-left: 130px; margin-right: -20px'>
                                 <a>Cognitive Disability Profile</a>
                                 <a>Assists with reading and focusing</a>
                             </div>
@@ -244,12 +337,18 @@
                             <a class='rounded-circle profile-icons' style='background-color: #f2f7fa;'><i class='fas fa-brain profile-icons'></i></a>
                             </div>
                         </div>
-                        <div class='dropdown-divider'></div>
-                      <div class='d-flex profile-hover'>
-                            <div style='padding-left: 10px;'>
-                            <span class='acsb-toggle-on'><span class='acsb-toggle-off'>OFF</span>&nbsp;&nbsp;ON</span>
+                        <div class='' style='text-align: center; margin: 0px 30px;' id='p3text'>
+                            <a> This profile provides various assistive features to help users with cognitive disabilities such as Autism, Dyslexia, CVA, and others, to focus on the essential elements of the website more easily. </a>
+                        </div>
+                        <div class='dropdown-divider' ></div>
+                        <div class='d-flex profile-hover' id='profile4'>
+                            <div style='padding-left: 10px;' >
+                                  <span class='acsb-toggle-on'></span>
+                                  <a class='toggle-text off'>OFF</a>
+                                  <a class='toggle-text on'>ON</a>
+                                  <span class='acsb-toggle-off' id='p4'></span>
                             </div>
-                            <div class='row profiles' >
+                            <div class='row profiles' style='margin-left: 130px; margin-right: -20px'>
                                 <a>ADHD Friendly Profile</a>
                                 <a>More focus and fewer distractions</a>
                             </div>
@@ -257,12 +356,18 @@
                             <a class='rounded-circle profile-icons' style='background-color: #f2f7fa;'><i class='fas fa-expand profile-icons'></i></a>
                             </div>
                         </div>
+                        <div class='' style='text-align: center; margin: 0px 30px;' id='p4text'>
+                            <a> This profile significantly reduces distractions, to help people with ADHD and Neurodevelopmental disorders browse, read, and focus on the essential elements of the website more easily. </a>
+                        </div>
                         <div class='dropdown-divider'></div>
-                      <div class='d-flex profile-hover'>
-                            <div style='padding-left: 10px;'>
-                            <span class='acsb-toggle-on'><span class='acsb-toggle-off'>OFF</span>&nbsp;&nbsp;ON</span>
+                        <div class='d-flex profile-hover' id='profile5'>
+                            <div style='padding-left: 10px;' >
+                                  <span class='acsb-toggle-on'></span>
+                                  <a class='toggle-text off'>OFF</a>
+                                  <a class='toggle-text on'>ON</a>
+                                  <span class='acsb-toggle-off' id='p5'></span>
                             </div>
-                            <div class='row profiles' >
+                            <div class='row profiles' style='margin-left: 130px; margin-right: -20px'>
                                 <a>Blind Users (Screen-reader)</a>
                                 <a>Use the website with your screen-reader</a>
                             </div>
@@ -270,18 +375,27 @@
                             <a class='rounded-circle profile-icons' style='background-color: #f2f7fa;'><i class='fas fa-wave-square profile-icons'></i></a>
                             </div>
                         </div>
+                        <div class='' style='text-align: center; margin: 0px 30px;' id='p5text'>
+                            <a> This profile adjusts the website to be compatible with screen-readers such as JAWS, NVDA, VoiceOver, and TalkBack. A screen-reader is software that is installed on the blind user’s computer and smartphone, and websites should ensure compatibility with it. </a>
+                        </div>
                         <div class='dropdown-divider'></div>
-                      <div class='d-flex profile-hover'>
-                            <div style='padding-left: 10px;'>
-                            <span class='acsb-toggle-on'><span class='acsb-toggle-off'>OFF</span>&nbsp;&nbsp;ON</span>
+                        <div class='d-flex profile-hover' id='profile6'>
+                            <div style='padding-left: 10px;' >
+                                  <span class='acsb-toggle-on'></span>
+                                  <a class='toggle-text off'>OFF</a>
+                                  <a class='toggle-text on'>ON</a>
+                                  <span class='acsb-toggle-off' id='p6'></span>
                             </div>
-                            <div class='row profiles' >
+                            <div class='row profiles' style='margin-left: 130px; margin-right: -20px'>
                                 <a>Keyboard Navigation (Motor)</a>
                                 <a>Use the website with the keyboard</a>
                             </div>
                             <div style='margin-top: -10px; margin-right: 10px;'>
                             <a class='rounded-circle profile-icons' style='background-color: #f2f7fa;'><i class='fas fa-exchange-alt profile-icons'></i></a>
                             </div>
+                        </div>
+                        <div class='' style='text-align: center; margin: 0px 30px;' id='p6text'>
+                            <a> This profile enables motor-impaired persons to operate the website using the keyboard Tab, Shift+Tab, and the Enter keys. Users can also use shortcuts such as “M” (menus), “H” (headings), “F” (forms), “B” (buttons), and “G” (graphics) to jump to specific elements.</a>
                         </div>
                   </div>
                   <div class='bg-white content rounded' style='width: 90%; margin-left: auto; margin-right: auto; padding-top: 30px; margin-top: 30px; padding-bottom: 30px; text-align: left;'>
